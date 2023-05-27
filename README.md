@@ -1,12 +1,14 @@
 # nonparametic_statistics
 
-# Machine Learning Algorithms Examples
+# Nonparametric Statistics Algorithms Examples
 
 This repository provides code examples of various machine learning algorithms implemented in Python and R. The examples cover a range of tasks such as classification, regression, hypothesis testing, and more. Whether you are an R or Python programmer, this collection offers practical implementations for both languages.
 
+Nonparametric statistics is a branch of statistics that does not make strong assumptions about the underlying probability distribution or parameters of the population from which the data is sampled. It is often used when the data does not meet the assumptions of parametric statistics or when the research question does not require specific distributional assumptions. Here are some examples of nonparametric statistical tests and techniques:
+
 ## Algorithms
 
-The repository includes examples for the following machine learning algorithms:
+The repository includes examples for the following algorithms:
 
 1. Mann-Whitney U test:
    - Python: `mann_whitney_u_test.py`
@@ -51,7 +53,7 @@ The code examples provide a practical implementation of each algorithm using sam
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your_username/machine-learning-algorithms-examples.git
+git clone https://github.com/greydoubt/nonparametic_statistics.git
 ```
 
 2. Navigate to the desired algorithm folder (e.g., `kruskal_wallis_test.py` for the Kruskal-Wallis test in Python or `kruskal_wallis_test.R` for R).
