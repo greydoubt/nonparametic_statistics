@@ -42,9 +42,13 @@ The repository includes examples for the following algorithms:
    - Python: `bootstrapping.py`
    - R: `bootstrapping.R`
 
-9. XGBoost (Classification):
+9a. XGBoost (Classification):
    - Python: `xgboost_classification.py`
    - R: `xgboost_classification.R`
+
+9b. XGBoost with Shapley (Classification):
+   - Python: `xgboost_shapley.py`
+   - R: `xgboost_shapley.R` (PENDING)
 
 The code examples provide a practical implementation of each algorithm using sample datasets or simulated data. You can explore each file for detailed code and instructions on running the algorithms.
 
