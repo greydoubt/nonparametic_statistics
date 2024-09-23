@@ -4,6 +4,12 @@
 
 This repository provides code examples of various machine learning algorithms implemented in Python and R. The examples cover a range of tasks such as classification, regression, hypothesis testing, and more. Whether you are an R or Python programmer, this collection offers practical implementations for both languages.
 
+One thrilling example is the Shapley Metric!
+
+<img width="563" alt="Screenshot 2024-09-22 at 16 13 02" src="https://github.com/user-attachments/assets/81892ee0-750f-4643-a9c8-da764fba8f58">
+
+
+
 Nonparametric statistics is a branch of statistics that does not make strong assumptions about the underlying probability distribution or parameters of the population from which the data is sampled. It is often used when the data does not meet the assumptions of parametric statistics or when the research question does not require specific distributional assumptions. Here are some examples of nonparametric statistical tests and techniques:
 
 ## Algorithms
