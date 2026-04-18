@@ -72,12 +72,23 @@ git clone https://github.com/greydoubt/nonparametic_statistics.git
 
 4. Modify the code and datasets as needed to fit your specific use case. Each example file contains comments to guide you through the necessary modifications.
 
-## Contributions
 
-Contributions to this repository are highly appreciated. If you have improvements, bug fixes, or additional examples for other machine learning algorithms, please submit a pull request.
 
-## License
 
-This repository is licensed under the [MIT License](LICENSE).
+## Foundations of NP Stats from Reverse Antiramsey Theory
 
-Feel free to explore and utilize the code examples for your machine learning projects in either Python or R. Happy learning and coding!
+
+
+
+<img width="1041" height="354" alt="Screenshot 2026-04-18 at 11 18 44" src="https://github.com/user-attachments/assets/797e97bc-c4b4-40e9-a7a6-ab33bbac98de" />
+
+
+
+<img width="446" height="517" alt="Screenshot 2026-04-18 at 11 16 29" src="https://github.com/user-attachments/assets/6e20ba20-6cc5-4c15-822c-04e750c99f2c" />
+
+
+
+
+
+
+
