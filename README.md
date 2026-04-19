@@ -58,6 +58,15 @@ The repository includes examples for the following algorithms:
 
 The code examples provide a practical implementation of each algorithm using sample datasets or simulated data. You can explore each file for detailed code and instructions on running the algorithms.
 
+
+
+<img width="2802" height="1808" alt="Screenshot 2026-04-19 at 10 20 37" src="https://github.com/user-attachments/assets/26e9f1b3-4cb8-4a80-991b-1f415767d259" />
+
+
+
+
+
+
 ## Usage
 
 1. Clone the repository to your local machine:
