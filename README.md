@@ -84,6 +84,14 @@ git clone https://github.com/greydoubt/nonparametic_statistics.git
 
 
 
+## Any Nonparametric Model can have an Ontology Grafted onto its Kernel
+
+
+<img width="868" height="783" alt="HHIygiJXcAAZo4E" src="https://github.com/user-attachments/assets/56ca159b-aa8a-4380-b1c8-2603320f4dce" />
+
+
+
+
 ## Foundations of NP Stats from Reverse Antiramsey Theory
 
 
@@ -98,6 +106,11 @@ git clone https://github.com/greydoubt/nonparametic_statistics.git
 
 
 ## Cool Stuff for Physics
+
+
+<img width="680" height="615" alt="KJywxmRe" src="https://github.com/user-attachments/assets/74cac1fe-92b7-4b23-a159-47067deadc8c" />
+
+
 
 <img width="1053" height="970" alt="Screenshot 2026-04-30 at 05 27 33" src="https://github.com/user-attachments/assets/65873e35-85d4-4f5d-81d4-1e728fa58b1a" />
 
