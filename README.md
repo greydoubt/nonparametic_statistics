@@ -97,6 +97,10 @@ git clone https://github.com/greydoubt/nonparametic_statistics.git
 
 
 
+## Cool Stuff for Physics
+
+<img width="1053" height="970" alt="Screenshot 2026-04-30 at 05 27 33" src="https://github.com/user-attachments/assets/65873e35-85d4-4f5d-81d4-1e728fa58b1a" />
+
 
 
 
