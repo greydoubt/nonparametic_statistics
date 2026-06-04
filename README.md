@@ -2,6 +2,28 @@
 
 # Nonparametric Statistics Algorithms Examples
 
+
+
+
+
+<img width="2036" height="1357" alt="c-duality transformation gaussian curve" src="https://github.com/user-attachments/assets/c6fde069-13c2-484a-a9bd-242297af4fb3" />
+```
+c-duality transform, where c(x, y) = 2(cos(3x) + 1)|y − x|² + (4 − 2(cos(3x) + 1))|y − x|⁴ and Psi(x) = -e^(-x²)
+```
+
+
+
+
+<img width="2036" height="1357" alt="infimal c-convolution of a cone with a cubic curve" src="https://github.com/user-attachments/assets/1b2b872a-491c-47c3-953b-8aaa11ba6c26" />
+
+```
+c-convexification of a curve in the case where c(x, y) = |x - y|
+
+
+```
+
+
+
 This repository provides code examples of various machine learning algorithms implemented in Python and R. The examples cover a range of tasks such as classification, regression, hypothesis testing, and more. Whether you are an R or Python programmer, this collection offers practical implementations for both languages.
 
 One thrilling example is the Shapley Metric!
