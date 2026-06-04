@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSV Viewer</title>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    input[type="file"] {
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #444;
+        padding: 8px 12px;
+        text-align: left;
+        transition: background-color 0.15s ease;
+    }
+
+    th {
+        background-color: #222;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    th.active {
+        background-color: #6a0dad;
+    }
+
+    td:hover {
+        background-color: #00aa55;
+        color: #000;
+    }
+
+    .links a {
+        margin-left: 8px;
+        color: #6a9cff;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>CSV Viewer</h2>
+<input type="file" id="csvFile" accept=".csv">
+<div id="tableContainer"></div>
+
+<script>
+let currentData = [];
+let sortState = { col: null, asc: true };
+
+window.addEventListener("load", () => {
+    fetch("default.csv")
+        .then(r => r.ok ? r.text() : Promise.reject())
+        .then(parseCSV)
+        .catch(() => {
+            document.getElementById("tableContainer").innerHTML =
+                "<p style='color:#777'>default.csv not loaded — upload a file</p>";
+        });
+});
+
+document.getElementById("csvFile").addEventListener("change", e => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = e => parseCSV(e.target.result);
+    reader.readAsText(file);
+});
+
+function parseCSV(text) {
+    currentData = text
+        .trim()
+        .split("\n")
+        .map(r => r.split(",").map(c => c.trim()));
+
+    sortState = { col: null, asc: true };
+    renderTable();
+}
+
+function renderTable() {
+    const container = document.getElementById("tableContainer");
+    const table = document.createElement("table");
+
+    currentData.forEach((row, rowIndex) => {
+        const tr = document.createElement("tr");
+
+        row.forEach((cell, colIndex) => {
+            if (rowIndex === 0) {
+                const th = document.createElement("th");
+                th.textContent = cell;
+                if (sortState.col === colIndex) th.classList.add("active");
+                th.addEventListener("click", () => sortByColumn(colIndex));
+                tr.appendChild(th);
+            } else {
+                const td = document.createElement("td");
+
+                // 📌 Stock name column (first column)
+                if (colIndex === 0) {
+                    const query = encodeURIComponent(cell);
+
+                    td.innerHTML = `
+                        ${cell}
+                        <span class="links">
+                            <a href="https://www.google.com/search?q=${query}" target="_blank">google</a>
+                            <a href="https://duckduckgo.com/?t=ffab&q=${query}&ia=web" target="_blank">ddg</a>
+                        </span>
+                    `;
+                }
+                // ✅ Only format pure numbers
+                else if (/^-?\d+(\.\d+)?$/.test(cell)) {
+                    td.textContent = parseFloat(cell).toFixed(2);
+                } else {
+                    td.textContent = cell;
+                }
+
+                tr.appendChild(td);
+            }
+        });
+
+        table.appendChild(tr);
+    });
+
+    container.innerHTML = "";
+    container.appendChild(table);
+}
+
+function sortByColumn(colIndex) {
+    const header = currentData[0];
+    const body = currentData.slice(1);
+
+    const asc = sortState.col === colIndex ? !sortState.asc : true;
+    sortState = { col: colIndex, asc };
+
+    body.sort((a, b) => {
+        const aVal = parseFloat(a[colIndex]);
+        const bVal = parseFloat(b[colIndex]);
+
+        if (!isNaN(aVal) && !isNaN(bVal)) {
+            return asc ? aVal - bVal : bVal - aVal;
+        }
+
+        return asc
+            ? a[colIndex].localeCompare(b[colIndex])
+            : b[colIndex].localeCompare(a[colIndex]);
+    });
+
+    currentData = [header, ...body];
+    renderTable();
+}
+</script>
+
+</body>
+</html>
