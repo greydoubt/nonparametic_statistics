@@ -3,6 +3,7 @@
 # Nonparametric Statistics Algorithms Examples
 
 
+<img width="1280" height="1280" alt="1780669314592" src="https://github.com/user-attachments/assets/b449f5b7-82ad-453a-8c22-912a95fd76c0" />
 
 
 
