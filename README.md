@@ -2,6 +2,18 @@
 
 # Nonparametric Statistics Algorithms Examples
 
+Consider the Operations UNDO, COPY, COST which are Functions that we may represent as the following Objects in matrix form:
+```
+Uu1, Un1, Ud1, Uo1
+Uc2, Uo2, Up2, Uy2
+Uc3, Uo3, Us3, Ut3
+```
+
+<img width="1085" height="728" alt="Screenshot 2026-06-22 at 13 45 28" src="https://github.com/user-attachments/assets/2308110c-87d5-47e7-9f20-65a3ed869a66" />
+
+
+# N# N# N# N# N# N# N# N# N# N# N
+
 
 <img width="1280" height="1280" alt="1780669314592" src="https://github.com/user-attachments/assets/b449f5b7-82ad-453a-8c22-912a95fd76c0" />
 
